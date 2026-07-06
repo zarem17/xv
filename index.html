@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años | Hilary Nohemi</title>
+    <style>
+	
+        /* Estilos Generales y Fondo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url("f.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+
+        /* Detalles decorativos */
+        h1 {
+            color: #8c7399; /* Tono lila oscuro para que sea legible */
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-family: 'Lucida Calligraphy', serif;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            color: #b695c0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .nombre {
+            font-size: 2.8rem;
+            color: #6a4a75;
+            font-weight: bold;
+            margin: 30px 0;
+            font-family: 'Kollegaly Rosalin', serif;
+        }
+
+        
+		/* Seccion de Evento Corregida */
+        .detalles {
+            background-color: #f3edf7; /* Fondo lila muy suave */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px dashed #b695c0;
+        }
+
+        .detalles p {
+            margin: 10px 0;
+            font-size: 1.2rem; /*Tamaño del texto*/
+            color: #4a4a4a;
+        }
+
+        .detalles a {
+            color: #6a4a75;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .fecha {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #6a4a75;
+        }
+
+        /* Cuenta Regresiva */
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .box-time {
+            background-color: #b695c0;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            width: 65px;
+        }
+
+        .box-time span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .box-time label {
+            font-size: 0.8rem;
+        }
+
+
+        .btn-asistencia:hover {
+            background-color: #4b3254;
+        }
+		
+        	
+        /* Ocultar el reproductor feo pero dejar la musica */
+        .reproductor {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+		.imagen-sin-fondo {
+               position: absolute; /* Desconecta la imagen del texto */
+               top: 50px;          /* La pega al borde inferior de la pantalla */
+               right: 150px;        /* La separa 20 píxeles del borde derecho */
+               z-index: -10;        /* Asegura que la imagen quede por encima del fondo */
+  
+               /* Opcional: Controla el tamaño si se ve muy grande */
+               max-width: 350px;   
+               height: auto;
+             }
+        .imagen-hojas-fondo {
+               position: absolute; /* Desconecta la imagen del texto */
+               top: 2px;          /* La pega al borde inferior de la pantalla */
+               right: 1133px;        /* La separa 20 píxeles del borde derecho */
+               z-index: -10;        /* Asegura que la imagen quede por encima del fondo */
+  
+               /* Opcional: Controla el tamaño si se ve muy grande */
+               max-width: 500px;   
+               height: auto;
+             }
+	    .imagen-tia-fondo {
+               position: absolute; /* Desconecta la imagen del texto */
+               top: -20px;          /* La pega al borde inferior de la pantalla */
+               right: 580px;        /* La separa 20 píxeles del borde derecho */
+               z-index: -10;        /* Asegura que la imagen quede por encima del fondo */
+  
+               /* Opcional: Controla el tamaño si se ve muy grande */
+               max-width: 350px;   
+               height: auto;
+             }
+		
+    </style>
+    <style>
+        /* Estilos Generales y Fondo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Calligraphy', sans-serif;
+        }
+    </style>
+    <style>
+    .rebote {
+      display: inline-block;
+      animation: bounce 0.6s infinite alternate;
+    }
+
+    @keyframes bounce {
+      to { transform: translateY(-10px); }
+    }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Nueva etiqueta de audio moderna y oculta -->
+    <audio id="musicaFondo" loop>
+        <source src="Arnie_Roth_-_Barbie_in_The_12_Dancing_Princesses_Theme_(mp3.pm)" type="audio/mpeg">
+    </audio>
+
+    <div class="invitacion"><br><br>
+	        <img src="ho-removebg-preview.png" alt="hojas" class="imagen-hojas-fondo">
+
+        <br><br><br><br><br><br><p align = center class="subtitulo">ESTAS  INVITADO A LA CELEBRACION DE</p>
+        <h1 align = center>MIS XV AÑOS</h1>
+        <div class="nombre"><p align = center>HILARY  NOHEMI</p></div><br><br>
+	        <img src="tia.png" alt="tiara" class="imagen-tia-fondo">
+            <img src="muneca.png" alt="una muñeca vestida de lila" class="imagen-sin-fondo">
+
+        <h2 align = center>Con el amor de mis padres y la bendición de Dios, me siento feliz de llegar a este momento de mi vida, <BR> donde inicio una nueva etapa y me encantaria que estes conmigo ¡celebremos juntos este gran dia!</h2><br><br><br><br><hr><br><br><br><br><br><br>
+		
+		
+		<h2> 🎁 Tu compañia es mi mayor regalo, pero si gustas puedes dar algun regalo o sobre, cualquier presente es bien recibido <br><br><br>
+            </h2><br><br>
+        <!-- Cuadro de datos recuperado y mejorado -->
+        <div class="detalles">
+            <p class="fecha"><strong>Sábado 1 de Agosto, 2026</strong></p><br>
+            <p><strong>Te esperamos a las:</strong> 5:00 PM</p>
+            <p><strong>En:</strong> La Iglesia de Jesucristo de los Santos de los Últimos Días</p>
+            <p><strong>Dirección:</strong> <a href="https://goo.gl" target="_blank">Av. Ejército Mexicano 74, Loma del Gallo, 89460 Cd Madero, Tamps. (Ver en Google Maps)</a></p>
+        </div><br><br><br><br><br><hr><br><br><br>
+
+        <h3>CUENTA REGRESIVA, FALTA POCO!!</h3>
+        <!-- Cuenta regresiva -->
+        <div class="countdown">
+            <div class="box-time">
+                <span id="dias">00</span>
+                <label>Días</label>
+            </div>
+            <div class="box-time">
+                <span id="horas">00</span>
+                <label>Hrs</label>
+            </div>
+            <div class="box-time">
+                <span id="minutos">00</span>
+                <label>Min</label> 
+            </div>
+            <div class="box-time">
+                <span id="segundos">00</span>
+                <label>Seg</label>
+            </div>
+        </div>
+	        <br><br><br><br><HR><br><br><br>
+            
+    <br><br><br>
+    <h2 class="rebote">                                       ¡Te esperamos!✨</h2><br><br><br><br><br>
+    </div>
+
+    <script>
+        // Cuenta Regresiva de Hilary Nohemi
+        const fechaEvento = new Date(2026, 7, 1, 17, 0, 0).getTime();
+
+        const actualizarCuenta = setInterval(() => {
+            const ahora = new Date().getTime();
+            const distancia = fechaEvento - ahora;
+
+            const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+            document.getElementById("dias").innerText = dias < 10 ? '0' + dias : dias;
+            document.getElementById("horas").innerText = horas < 10 ? '0' + horas : horas;
+            document.getElementById("minutos").innerText = minutos < 10 ? '0' + minutos : minutes;
+            document.getElementById("segundos").innerText = segundos < 10 ? '0' + segundos : segundos;
+
+            if (distancia < 0) {
+                clearInterval(actualizarCuenta);
+                document.querySelector(".countdown").innerHTML = "¡Llegó el gran día!";
+            }
+        }, 1000);
+
+        // Disparadores automáticos de audio al primer toque en móviles o ordenadores
+        document.addEventListener('click', () => {
+            const musica = document.getElementById("musicaFondo");
+            musica.play().catch(error => console.log("Audio esperando interacción activa"));
+        }, { once: true });
+
+        document.addEventListener('touchstart', () => {
+            const musica = document.getElementById("musicaFondo");
+            musica.play().catch(error => console.log("Audio esperando interacción activa"));
+        }, { once: true });
+
+        document.addEventListener('scroll', () => {
+            const musica = document.getElementById("musicaFondo");
+            musica.play().catch(error => console.log("Audio esperando interacción activa"));
+        }, { once: true });
+    </script>
+</body>
+</html>
